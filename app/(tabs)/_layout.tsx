@@ -2,8 +2,7 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import { Tabs } from 'expo-router';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import Entypo from '@expo/vector-icons/Entypo';
+import { MaterialCommunityIcons, Entypo } from '@expo/vector-icons';
 
 const TabsLayout = () => {
   return (
@@ -27,16 +26,12 @@ const TabsLayout = () => {
         }}
       />
 
-<Tabs.Screen
+      <Tabs.Screen
         name="affirmations"
         options={{
           tabBarLabel: 'Affirmations',
           tabBarIcon: ({ color }) => (
-            <Entypo
-              name="open-book"
-              size={24}
-              color={color}
-            />
+            <Entypo name="open-book" size={24} color={color} />
           ),
         }}
       />
